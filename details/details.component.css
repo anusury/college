@@ -1,0 +1,30 @@
+*{
+    background-color: lightpink;
+}
+table,th,td{
+    border: 1px solid black;
+    margin-left: .5cm;
+    margin-top: .5cm; 
+    text-align: center;
+ }
+ #button3,#button1,#button2{
+     border: rgb(243, 239, 239);
+     background-color:lightgreen;
+     width: 5cm;
+     color: rgb(4, 4, 4);
+     font: 1em sans-serif bolder;
+     font-weight: 500;
+     margin-top: .5cm;
+     margin-left: .5cm;
+ }
+ 
+ th{
+     width: 5cm;
+ }
+ h1{
+     text-align: center;
+     font-weight: bold;
+     font-style: normal;
+     font-family:  monospace;
+ }
+ 

@@ -1,0 +1,245 @@
+
+   table,th,td,tr{
+    border: 2px solid black;
+    margin-left: .5cm;
+    margin-top: .5cm; 
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    height:10px;
+    margin-right: 10px;
+    
+ }
+ th{
+     background-color: black;
+     color: whitesmoke;
+ }
+ tr{
+    margin-left: .5cm;
+    margin-top: .5cm; 
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    height: 5px;
+ }
+ *{
+     background-color:lightpink;
+ }
+ .heading{
+    grid-area: text;
+  
+    font-size: 10vmin;
+    margin: 0;
+    padding: 20px;
+    color:black;
+    text-shadow: 1vmin 1vmin 0 #a09d97;
+    text-align: center;
+ }
+ .heading1{
+     background-color: black;
+     color:black;
+     font-weight: lighter;
+ }
+ .second{
+     text-align: center;
+ }
+ h2{
+     text-align: center;
+     font-weight: bold;
+     font-family: monospace;
+ }
+ .second {
+     align-items: center;
+     margin-left: 330px;
+ }
+ .third {
+    align-items: center;
+    margin-left: 400px;
+}
+ button{
+     width: 180px;
+     background-color: black;
+     color: whitesmoke;
+ }
+ img{
+     margin-left: 10px;
+ }
+ a{
+     color:black;
+     border: none;
+ }
+ 
+
+ .trending {
+	width:100%;
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#trendingslide {
+    margin-top: -9px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 40rem;
+	border: 1px solid pink;
+	box-shadow: 0px 8px 10px 8px grey;
+}	
+
+#trendingslide img {
+	position: absolute;
+	width: 100%;
+	height: 40rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes trendingslide_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 40rem;
+		width: 100%;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 100%;
+	}
+	33.33% { /* .imageunloaded */
+		height: 40rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 40rem;
+		width: 0rem;
+		left: 100%;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes trendingslide_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 40rem;
+		left: 100%;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 100%;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 40rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes trendingslide_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 40rem;
+		left: 100%;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 100%;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 40rem;
+		opacity: 1;
+	}
+}
+
+#trendingslide img.one{
+	animation-name: trendingslide_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#trendingslide img.two {
+	animation-name: trendingslide_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#trendingslide img.three {
+	animation-name: trendingslide_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}

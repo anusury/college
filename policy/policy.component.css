@@ -1,0 +1,14 @@
+*{
+    background-color: lightpink;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: large;
+}

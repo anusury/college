@@ -1,0 +1,60 @@
+.one{
+    margin-left: 450px;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+}
+*{
+    background-color: lightpink;
+}
+.image2{
+    margin-left: 250px;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+.image3{
+    margin-left: 40px;
+}
+h3,h2{
+    text-align: center;
+}
+.container4{
+    display: flex;
+   
+    min-height: 70vh;
+    position: relative;
+    flex-wrap: wrap;
+    margin-left:450px;
+
+}
+.container4 .box{
+    position: relative;
+    width:500px;
+    height:400px;
+    overflow: hidden;
+    transition: 0.5s;
+margin-right: 150px;
+text-align: center;
+
+}
+.container4 .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+   box-shadow: 0 25px 40px black;
+}
+.container4 .box .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+   
+}
+.container4 .box .imgbx img{
+    width: 500px;
+    height: 400px;
+}

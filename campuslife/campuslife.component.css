@@ -1,0 +1,30 @@
+*{
+    background-color: lightpink;
+}
+.one {
+    margin-left:50px;
+}
+.two {
+    margin-left: 650px;
+}
+.three {
+    margin-left: 50px;
+}
+.four{
+    margin-left: 650px;
+    margin-bottom: 30px;
+}
+button{
+    text-align: center;
+    margin-left: 550PX;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+p{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+}

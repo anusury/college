@@ -1,0 +1,17 @@
+*{
+    background-color: lightpink;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+img{
+    margin-left: 350px;
+}
+p{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
